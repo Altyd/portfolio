@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+p { 
+    color: #fff; 
+   } 
+   .languages-container {
+    display: flex;
+}
+
+.language-box {
+    background-color: #1d2d52;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #0f172a;
+}
+
+header {
+    background-color: #0f172a;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 10px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Add animation to the navigation links */
+nav ul li a:hover {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add animation to project cards */
+.project-card {
+    background-color: #24396b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+        display: flex;
+        align-items: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+/* ... (previous styles) */
+
+/* Add animation to the headers on hover */
+h1:hover, h2:hover, h3:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* ... (previous styles) */
+
+/* Style the hero section */
+#hero {
+    background-color: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.hero-carousel {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+.carousel-item {
+    display: inline-block;
+    padding: 0 20px;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+}
+/* ... (previous styles) */
+
+/* Style the "scroll to top" button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+/* ... (previous styles) */
+
+/* Style the "Contact Me" section */
+#contact {
+    background-color: #0f172a;
+    padding: 70px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-button {
+    background-color: #24396b;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+.project-logo {
+    width: 40px; /* Adjust the logo size as needed */
+    margin-right: 10px;
+}
