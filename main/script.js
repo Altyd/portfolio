@@ -58,7 +58,7 @@ navLinks.forEach(link => {
         smoothScroll(target, 1000);
     });
 });
-//open project card new tab
+//open project card in new tab
 document.addEventListener("DOMContentLoaded", function() {
     const projectCards = document.querySelectorAll(".project-card");
 
