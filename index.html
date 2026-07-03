@@ -77,9 +77,15 @@
             opacity: 0;
         }
 
-        footer {
+        section:nth-of-type(6) {
             animation: reveal 0.6s ease-out forwards;
             animation-delay: 1.05s;
+            opacity: 0;
+        }
+
+        footer {
+            animation: reveal 0.6s ease-out forwards;
+            animation-delay: 1.2s;
             opacity: 0;
         }
 
@@ -191,6 +197,19 @@
             color: var(--text);
         }
 
+        .work-desc a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .work-desc a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -278,7 +297,7 @@
             <div class="about">
                 <p>I build software systems with an emphasis on clarity, reliability, and long-term maintainability.</p>
                 <p>My work focuses on AI-driven automation, backend architecture, and production-grade integrations. I design workflows that reduce complexity and scale without excessive abstraction.</p>
-                <p>Currently working on agent-based systems, RAG pipelines, and multi-vendor AI orchestration.</p>
+                <p>Currently working on conversational AI orchestration, journey-based automation, and analytics for dealership platforms.</p>
                 <p>Interested in problems that sit at the intersection of engineering constraints, decision-making systems, and practical automation.</p>
             </div>
         </section>
@@ -294,10 +313,18 @@
 
         <section>
             <h2>Selected Work</h2>
-            
+
+            <div class="work-item">
+                <div class="work-title">AI Consultant — DealerStudio</div>
+                <div class="work-meta">Feb 2026 - Present</div>
+                <div class="work-desc">
+                    Architected and shipped a visual builder for AI-guided customer conversations end-to-end: data model, backend orchestration, a React editor with an embedded AI assistant, and analytics on conversation outcomes. Built the safety layer behind a production conversational AI system, guarding live customer interactions against unsupported claims and incorrect behavior.
+                </div>
+            </div>
+
             <div class="work-item">
                 <div class="work-title">AI Agent Engineer — GrowFactory</div>
-                <div class="work-meta">Jul 2024 - Present</div>
+                <div class="work-meta">Jul 2024 - Feb 2026</div>
                 <div class="work-desc">
                     Built and deployed AI-driven services integrated into complex business workflows. Led end-to-end delivery of full-stack features with multi-vendor AI model integration (OpenAI, Gemini, OpenRouter).
                 </div>
@@ -316,6 +343,18 @@
                 <div class="work-meta">Feb 2020 - Sep 2022</div>
                 <div class="work-desc">
                     Created software solutions in C#, C++, and Python. Scaled from 0 to 3000+ users while leading a team of three.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research</h2>
+
+            <div class="work-item">
+                <div class="work-title">Machine-Native Agent Communication</div>
+                <div class="work-meta">Preprint — Jun 2026</div>
+                <div class="work-desc">
+                    Tests whether agents should default to natural language when talking to each other. Compares plain, terse, JSON-structured, and compressed protocols across two model generations, structured formats cut token cost with lower variance, but protocol design mattered more than the format chosen. <a href="machine-native-agent-communication.pdf" target="_blank">Read the paper</a>
                 </div>
             </div>
         </section>
